@@ -595,7 +595,281 @@ Visualizacion:
 <img width="100" alt="Captura de Pantalla 2022-03-05 a la(s) 4 39 22 p  m" src="https://user-images.githubusercontent.com/88452146/156900646-c94206b2-acbc-4550-9428-84e2945df7a7.png">
 
 ## disclaimer_link 
+Contiene un label con un enlance de link en alguna zona en particular. (Se encuentra en el proyecto del SDK)
 
+| Atributo            | Tipo             | Opcional | |
+|---------------------|------------------|----------|-|
+| labels              | {CHSDKLabelWithEvent}    | True     | dentro de Label tiene los siguientes parametros:  <br/>`text`: {Rich} <br/>`event`: {Event} <br/>`link_text`: String parte del texto donde va a tener el enlance|
+
+Modelo:
+```json
+{
+  "ui_type": "disclaimer_link",
+  "data": {
+    "labels": [
+      {
+        "text": {
+          "rich": [
+            {
+              "type": "text",
+              "value": {
+                "text": "Ao confirmar, aceita os ",
+                "modifier": "faint"
+              }
+            },
+            {
+              "type": "text",
+              "value": {
+                "text": "termos gerais ",
+                "modifier": "neutral"
+              }
+            },
+            {
+              "type": "text",
+              "value": {
+                "text": "e as",
+                "modifier": "faint"
+              }
+            }
+          ],
+          "accessibility": "Ao confirmar, aceita os termos gerais e as"
+        },
+        "link_text": "termos gerais",
+        "event": {
+          "type": "open_webview",
+          "data": {
+            "url": "meli://webview/?url=https://frontend.mercadolibre.com/checkout/v2/credits/terms/particular?site=MLB&bar_color=FFDB15&authentication_mode=required"
+          }
+        }
+      }
+    ]
+  }
+}
+```
+
+Visualizacion:
+
+<img width="284" alt="Captura de Pantalla 2022-03-05 a la(s) 4 58 11 p  m" src="https://user-images.githubusercontent.com/88452146/156901402-36210939-966a-4806-b9e5-e9f17ced3e70.png">
+
+
+## disclaimer 
+
+ Muestra un Label (Se encuentra en el proyecto del SDK)
+
+| Atributo            | Tipo             | Opcional | |
+|---------------------|------------------|----------|-|
+| labels              | {Rich}    | False     | texto|
+| background          |  [String]   | True     | background del label|
+
+Modelo:
+```json
+{
+  "id": "disclaimer_summary",
+  "ui_type": "disclaimer",
+  "data": {
+    "text": {
+      "rich": []
+    }
+  }
+}
+```
+Visualizacion:
+
+<img width="381" alt="Captura de Pantalla 2022-03-05 a la(s) 5 14 22 p  m" src="https://user-images.githubusercontent.com/88452146/156901590-4082e6ec-a9be-4e89-8163-a3eb57933fab.png">
+
+## outlined_container 
+
+ Muestra un view(contendor) deliniado (Se encuentra en el proyecto del SDK)
+
+| Atributo            | Tipo             | Opcional | |
+|---------------------|------------------|----------|-|
+| padding              | CHSDKBrickPadding   | True     | mergenes del view|
+
+Modelo:
+```json
+{
+    "ui_type": "outlined_container",
+    "data": {
+        "padding": {
+            "top": "xxxlarge",
+            "left": "large",
+            "bottom": "xxxlarge",
+            "right": "large"
+        }
+    }
+}
+```
+Visualizacion:
+
+<img width="371" alt="Captura de Pantalla 2022-03-05 a la(s) 5 28 12 p  m" src="https://user-images.githubusercontent.com/88452146/156901864-574b2cf8-6011-4cd4-bec2-e745dd967f2a.png">
+
+
+## list_row_with_container 
+
+muestra una fila con imagen, label y un stack debajo de la fila principal (Se encuentra en el proyecto del SDK)
+
+| Atributo            | Tipo             | Opcional | |
+|---------------------|------------------|----------|-|
+| asset              | MLBFFloxComponentImageModel   | True     | icono de tipo MLBFFloxComponentImageModel|
+| title              | {Rich}   | False     | Texto del label|
+| price              | {Rich}   | True     | Texto del precio del label|
+| style              | CHSDKListRowWithContainerBrickModifierFactory   | True     | Estilo, quick_selector |
+| events              | {events}   | True     | |
+| bricks              | {bricks}   | True     | |
+
+Modelo:
+```json
+{
+  "ui_type": "list_row_with_container",
+  "data": {
+    "padding": {
+      "bottom": "large"
+    },
+    "style": "quick_selector",
+    "title": {
+      "rich": [],
+      "accessibility": "Você tem um cupom de desconto?"
+    },
+    "asset": {
+      "data": {
+        "id": "buflo_one_tap_payment_coupon"
+      },
+      "type": "logo",
+      "accessibility": "Você tem um cupom de desconto?"
+    },
+    "event": {}
+  }
+}
+```
+Visualizacion:
+
+<img width="382" alt="Captura de Pantalla 2022-03-05 a la(s) 5 36 51 p  m" src="https://user-images.githubusercontent.com/88452146/156902108-f09b65e7-7e7f-4d28-bffb-54ed68a475ce.png">
+
+
+## image_label 
+muestra una imagen con un label al frente (Se encuentra en el proyecto de Components)
+
+
+| Atributo            | Tipo             | Opcional | |
+|---------------------|------------------|----------|-|
+| asset              | MLBFFloxComponentImageModel   | True     | icono de tipo MLBFFloxComponentImageModel|
+| text              | {Rich}   | True     | Texto del label|
+| modifier              | String Enum   | True     | extended\| reduced\| around\| no_padding\| |
+
+Modelo:
+```json
+{
+  "id": "image_label",
+  "ui_type": "image_label",
+  "data": {
+    "asset": {
+      "accessibility": "mo_transferhub_clock",
+      "data": {
+        "local": "clock"
+      },
+      "type": "icon"
+    },
+    "text": {
+      "rich": []
+    }
+  }
+}
+```
+Visualizacion:
+
+<img width="348" alt="Captura de Pantalla 2022-03-05 a la(s) 5 45 51 p  m" src="https://user-images.githubusercontent.com/88452146/156902334-ae7fbff6-d4cd-4da8-8b26-a598455ff7ee.png">
+
+
+## cho_text_content 
+muestra un label sin margenes (Se encuentra en el proyecto del SDK)
+
+
+| Atributo            | Tipo             | Opcional | |
+|---------------------|------------------|----------|-|
+| content              | {Rich}   | False     | Texto del label|
+
+```json
+{
+  "ui_type": "cho_text_content",
+  "data": {
+    "content": {
+      "rich": [
+        {
+          "type": "text",
+          "value": {
+            "text": "test value"
+          }
+        }
+      ],
+      "accessibility": "test value"
+    }
+  }
+}
+```
+
+Visualizacion:
+
+<img width="379" alt="Captura de Pantalla 2022-03-05 a la(s) 5 55 50 p  m" src="https://user-images.githubusercontent.com/88452146/156902428-e07dd5a7-59e3-4a08-a012-573d884e0d22.png">
+
+
+## cho_webview 
+muestra un webView  (Se encuentra en el proyecto del SDK)
+
+
+| Atributo            | Tipo             | Opcional | |
+|---------------------|------------------|----------|-|
+| url              | String   | False     | url de la web|
+| authenticated              | Bool   | True     | Saber si esta autenticado|
+
+```json
+{
+  "ui_type": "cho_webview",
+  "data": {
+    "authenticated": true,
+    "url": "https://frontend.mercadolibre.com/checkout/v2/credits/terms/general?site=MLB"
+  }
+}
+```
+
+Visualizacion:
+
+![Simulator Screen Shot - iPhone 12 - 2022-03-05 at 17 56 53](https://user-images.githubusercontent.com/88452146/156902543-ec085003-a337-47dc-b5a7-b1aa37f1fac4.png)
+
+
+## list_row 
+muestra una imagen, icon y un stack, se utiliza en las congrats (Se encuentra en el proyecto del SDK)
+
+
+| Atributo            | Tipo             | Opcional | |
+|---------------------|------------------|----------|-|
+| title              | {Rich}   | False     |titulo del texto|
+| description         |{Rich}   | True     |Descripcion del texto|
+| icon         |CHSDKCongratsFloxImage   | False     |imagen del icono|
+| style         |String   | Fasle     ||
+| event         |{event}   | Fasle     ||
+
+```json
+{
+    "ui_type": "list_row",
+    "data": {
+        "title": {
+            "rich": [],
+        },
+        "style": "selector",
+        "event": {}
+    }
+}
+```
+
+
+## cho_sdk_integrator_image 
+Contiene un view con un ImageView (MLBFFloxComponentImageView) - (Se encuentra en el proyecto del SDK)
+
+
+| Atributo            | Tipo             | Opcional | |
+|---------------------|------------------|----------|-|
+| image              | MLBFFloxComponentImageModelData   | True     |imagen|
+| accessibility         |String  | True     ||
 
 
 **input_amount**
