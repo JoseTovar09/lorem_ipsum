@@ -872,5 +872,167 @@ Contiene un view con un ImageView (MLBFFloxComponentImageView) - (Se encuentra e
 | accessibility         |String  | True     ||
 
 
+## cho_sdk_integrator_space 
+Contiene un view que cambia su altura utilizado como espacio en blanco - (Se encuentra en el proyecto del SDK)
+
+
+| Atributo            | Tipo             | Opcional | |
+|---------------------|------------------|----------|-|
+| height              | String   | False     |altura del espacio.|
+
+
+## cho_sdk_one_tap_payment_account_money_with_other_method 
+pagar con Account Money con otro metodo de pago. (Se encuentra en el proyecto del SDK)
+
+
+| Atributo            | Tipo             | Opcional | |
+|---------------------|------------------|----------|-|
+| title              | {Rich}   | False     |Texto del label|
+| asset              | MLBFFloxComponentImageModel   | True     |imagen del icono|
+
+
+```json
+{
+    "ui_type": "cho_sdk_one_tap_payment_account_money_with_other_method",
+    "data": {
+      "asset": {
+        "data": {
+          "id": "mercado-pago-black"
+        },
+        "type": "logo",
+      },
+      "title": {
+        "rich": []
+      }
+    },
+    "bricks": [
+      {
+        "ui_type": "switch",
+        "data": {
+          "checked": true,
+          "event": {
+          }
+        },
+        "id": "switch"
+      }
+    ],
+}
+```
+
+Visualizacion:
+
+<img width="379" alt="Captura de Pantalla 2022-03-05 a la(s) 6 24 29 p  m" src="https://user-images.githubusercontent.com/88452146/156903103-92740b0e-0126-485b-a05c-0adf7f705cda.png">
+
+## cho_sdk_integrator_row_with_image 
+Muetsra una imagen con dos texto al frente.  (Se encuentra en el proyecto del SDK)
+
+
+| Atributo            | Tipo             | Opcional | |
+|---------------------|------------------|----------|-|
+| title              | {Rich}   | True     |Texto del primer label|
+| description        | {Rich}   | True     |Texto del segundo label|
+| image              | MLBFFloxComponentImageModel   | True     |obtiene la imagen|
+| fade_anim          | CHSDKFadeAnimationModel   | True     |tipo de animacion al mostrar el componente|
+
+Model: 
+
+```json
+{
+  "ui_type": "cho_sdk_integrator_row_with_image",
+  "data": {
+    "image": {
+      "data": {
+        "url": "https://http2.mlstatic.com/D_691535-MLA29134565196_012019-I.jpg"
+      },
+      "type": "image"
+    },
+    "description": {
+      "rich": [],
+      "accessibility": "Quantidade: 1"
+    },
+    "fade_anim": {
+      "duration": 1500,
+      "delay": 0,
+      "alpha_from": 0,
+      "alpha_to": 1
+    },
+    "title": {
+      "rich": [ ],
+      "accessibility": "Item De Teste Fs 9kg"
+    }
+  }
+}
+```
+
+Visualizacion:
+
+## cho_sdk_integrator_button 
+este brick esta configurado en el proyecto del SDK pero obtiene la data y el view de [button](#button). (Se encuentra en el proyecto del SDK)
+
+
+## cho_sdk_integrator_card 
+es un contendor que tiene un stack y es utilizado en oneTap  (Se encuentra en el proyecto del SDK)
+
+| Atributo            | Tipo             | Opcional | |
+|---------------------|------------------|----------|-|
+| padding              | CHSDKBrickPadding   | True     |Margenes del contendor|
+
+
+## one_tap_main 
+Contiene un stack y debajo un View. es utilizado en oneTap  (Se encuentra en el proyecto del SDK)
+
+| Atributo            | Tipo             | Opcional | |
+|---------------------|------------------|----------|-|
+| close_event              | {event}   | True     ||
+| not_closable              |Bool   | True     ||
+
+
+## ftu_main 
+Tiene el mismo data y view que [one_tap_main](#one_tap_main)  (Se encuentra en el proyecto del SDK)
+
+
+## cho_sdk_one_tap_modal 
+Tiene el mismo data y view que [one_tap_main](#one_tap_main)  (Se encuentra en el proyecto del SDK)
+
+## list_row_with_price 
+ lista de items con su precio  (Se encuentra en el proyecto del SDK)
+
+| Atributo            | Tipo             | Opcional | |
+|---------------------|------------------|----------|-|
+| hidden              | Bool   | True     ||
+| title              |{Rich}   | True     ||
+| subtitle              |{Rich}   | True     ||
+| description              |{Rich}   | True     ||
+| description_event              |{event}   | True     ||
+| price              |{Rich}   | True     ||
+| full_price              |{Rich}   | True     ||
+| style              |String   | True     ||
+| modifier              |String   | True     ||
+| event              |{event}   | True     ||
+
+
+```json
+{
+  "ui_type": "list_row_with_price",
+  "data": {
+    "padding": {
+      "bottom": "large"
+    },
+    "title": {
+      "rich": [],
+    },
+    "price": {
+      "rich": [],
+    },
+    "modifier": "ellipsize"
+  },
+}
+```
+Visualizacion:
+
+<img width="364" alt="Captura de Pantalla 2022-03-05 a la(s) 6 52 06 p  m" src="https://user-images.githubusercontent.com/88452146/156903545-fa838f76-c019-4950-a96e-481f39fab0a3.png">
+
+
+
 **input_amount**
 
