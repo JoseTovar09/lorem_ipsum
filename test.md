@@ -2,7 +2,7 @@
 
 En esta seccion mostramos la lista de los bricks "ui_type" que soportamos en los poryectos CHOSDK, Components y Split en iOS 🍎.
 
-# Modulo Components - SDK
+# Modulo Common - SDK
 
 - [title_with_action](#title_with_action)
 - [separator](#separator)
