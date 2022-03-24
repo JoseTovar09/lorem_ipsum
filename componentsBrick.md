@@ -2,6 +2,80 @@
 
 En esta seccion mostramos la lista y el detalle de los bricks "ui_type" del proyecto Components en iOS 🍎.
 
+## button_container
+
+Es un brick especial para contener los [button](#button) puede contener N botones. (Se encuentra en el proyecto de Components). 
+Contiene los botones con un margen en especial. 
+
+Modelo:
+
+```json
+{
+    "ui_type": "button_container",
+    "data" : {
+        "text" : "Botones"
+    },
+    "bricks": [
+      {
+        "id": "button1",
+        "ui_type": "button",
+        "data": {
+          "text": "Loud",
+          "style": "loud",
+          "event": {
+            "type": "alert"
+          },
+          "accessibility": "loud button style"
+        }
+      }    
+    ]
+}
+```
+
+## button
+
+Diferentes tipos de botones que también maneja iconos dentro del botón. (Se encuentra en el proyecto de Components)
+
+* No es necesario que los botones esten dentro de [button_container](#button_container). 
+* Tener en cuenta que si los botones no esta dentro de [button_container](#button_container) sus márgenes serán toda la pantalla (ancho).
+
+
+| Atributo            | Tipo             | Opcional | |
+|---------------------|------------------|----------|-|
+| data                | Object           | False     |Objeto que contiene los parámetros del botón|
+| text                | String           | False     |texto que se muestra en el botón|
+| style               | String Enum      | False     |loud \| quiet \| transparent. Default quiet.<br/>`loud`: Estilo de botón normal<br/>`quiet`: Botón con fondo opaco<br/>`transparent`: Botón con fondo transparante|
+| icon                | {icon}           | True      |objeto que contiene: <br/>`id`: id del icono (String) <br/>`orientation`: orientación del ícono (String) left \| rigth  |
+| event               | {event}          | False     |objeto que contiene el evento accionar luego de que el botón fue precionado|
+| accessibility       | String           | False     ||
+
+Modelo:
+
+```json
+{
+  "ui_type": "button",
+  "data": {
+    "text": "Icon left",
+    "style": "loud",
+    "icon": {
+      "id": "download",
+      "orientation": "left"
+    },
+    "event": {
+      "type": "alert"
+    },
+    "accessibility": "Cómo se verá en el resumen"
+  }
+}
+```
+
+Visualización: 
+
+<img width="375" alt="Captura de Pantalla 2022-03-05 a la(s) 2 04 54 p  m" src="https://user-images.githubusercontent.com/88452146/156896774-da4e3db1-641b-485a-ad58-985ab3b00869.png">
+
+
+
+
 ## test_app_label 
 Muestra un texto con fondo gris 
 
@@ -22,6 +96,259 @@ Model:
 Visualizacion:
 
 <img width="378" alt="Captura de Pantalla 2022-03-24 a la(s) 3 58 44 p  m" src="https://user-images.githubusercontent.com/88452146/160009189-fb705688-1d54-4d0c-9104-8c830d26a324.png">
+
+## input_text
+
+Campo de texto con un label en la parte superior. (Se encuentra en el proyecto de Components)
+
+| Atributo            | Tipo             | Opcional | |
+|---------------------|------------------|----------|-|
+| data                | Object           | False     |Objeto que contiene los parámetros|
+| name                | String           | True      |texto que se muestra en el botón|
+| label        | String           | True     |Texto que se muestra en el label. Se encuentra en la parte superior del campo de texto|
+| hint        | String              | True     |Texto que muestra en el campo de texto como Hint|
+| disabled_text       | String           | True     | |
+| constraints       | {constraints}           | True     |objeto tipo InputTextConstraint. Realiza verificación|
+| attributes       | [attributes]           | True     | Array del objeto attributes que contiene: <br/>`name`: maxLength \| keyboard \| data-mask <br/> Cada uno contiene parámetros diferentes (ver code) |
+| data_to_fill       | {InputTextBrickDataToFill}           | True     |objeto tipo InputTextBrickDataToFill|
+| event_focus       | {event}           | True     ||
+| tracks       | {tracks}           | True     ||
+
+Modelo:
+
+```json
+{
+  "ui_type": "input_text",
+  "data": {
+    "style": "simple",
+    "name": "cpf",
+    "label": "CPF",
+    "hint": "",
+    "attributes": [
+      {
+        "name": "keyboard",
+        "value": "number"
+      },
+      {
+        "name": "data-mask",
+        "regex": "^(\\d{3})\\.?(\\d{1,3})?\\.?(\\d{1,3})?-?(\\d{1,2})?$",
+        "mask": [
+          ".",
+          ".",
+          "-"
+        ]
+      }
+    ],
+    "constraints": {
+      "immediate_constraints": [
+        {
+          "name": "required",
+          "value": true,
+          "error_message": "REQUIRED"
+        }
+      ],
+      "triggered_constraints": [
+        {
+          "name": "required",
+          "value": true,
+          "error_message": "REQUIRED"
+        },
+        {
+          "name": "minLength",
+          "value": 4,
+          "error_message": "MIN_LENGTH"
+        },
+        {
+          "name": "documentValidation",
+          "value": "CPF-MLB",
+          "error_message": "DOCUMENT"
+        }
+      ]
+    }
+  }
+}
+```
+
+Visualización: 
+
+<img width="352" alt="Captura de Pantalla 2022-03-05 a la(s) 2 34 10 p  m" src="https://user-images.githubusercontent.com/88452146/156898124-9c7cf886-7489-4ae7-bce1-66c9fd06601a.png">
+
+
+## submit_button
+
+botón para enviar datos del formulario. Tiene el mismo data que el [button](#button). (Se encuentra en el proyecto de Components)
+* tiene el objeto Event que es el que contiene la lógica para enviar los datos del formulario.
+
+Visualización: 
+
+<img width="351" alt="Captura de Pantalla 2022-03-05 a la(s) 3 02 33 p  m" src="https://user-images.githubusercontent.com/88452146/156898427-9481f679-6624-4b05-b94f-aca07bf499aa.png">
+
+## input_card_radio_button 
+
+Muestra un radio Button con un texto y texto con acciones dentro de una card (Se encuentra en el proyecto de Components)
+
+| Atributo            | Tipo             | Opcional | |
+|---------------------|------------------|----------|-|
+| data                | Object           | True     |Objeto que contiene los parametros |
+| name             | String           | False     |nombre del radio button|
+| value        | []     | False     |Objeto que contiene el valor del radioButton|
+| selected        | Bool     | True     |atributo que dice si esta o no seleccionado el radio button|
+| title        | {Rich}     | False     |Texto que aparece al lado del radio button.|
+| subtitle        | {Rich}    | True     |Texto que aparece a bajo del titulo|
+| actions        | [MLBFFloxComponentRadioButtonCardAction]     | True     ||
+
+Modelo:
+
+```json
+{
+    "ui_type": "input_card_radio_button",
+    "data": {
+        "name": "shipping_addresses_hub_radio_button_1",
+        "value": {"address_id": "1103142906"},
+        "selected": true,
+        "title": {
+            "rich": []
+        },
+        "subtitle": {
+            "rich": [],
+            "accessibility": "CP: 1430 - Saavedra, Capital Federal Rosa Martínez - 011152839407"
+        },
+        "actions": [
+            {
+                "text": {
+                    "rich": [
+                        {
+                            "type": "text",
+                            "value": {
+                                "modifier": "neutral",
+                                "text": "Mostrar alerta"
+                            }
+                        }
+                    ],
+                    "accessibility": "Editar domicilio"
+                },
+                "event": {
+                    "type": "alert",
+                    "data": { }
+                }
+            },
+            {
+                "text": {
+                    "rich": [
+                        {
+                            "type": "text",
+                            "value": {
+                                "modifier": "neutral",
+                                "text": "Acción sin evento asociado"
+                            }
+                        }
+                    ],
+                },
+                "event": {
+                    "type": "go_to_delivery_instructions",
+                    "data": { }
+                }
+            }
+        ]
+    }
+}
+```
+
+Visualizacion: 
+
+<img width="372" alt="Captura de Pantalla 2022-03-05 a la(s) 4 22 19 p  m" src="https://user-images.githubusercontent.com/88452146/156900288-5dc21e23-1901-4640-b944-1ba63cf8849d.png">
+
+## input_card_radio_button_group
+
+Tiene un sctak donde agrupa N [input_card_radio_button](#input_card_radio_button) en una card, No tiene data (Se encuentra en el proyecto de Components)
+
+Visualizacion: 
+
+<img width="379" alt="Captura de Pantalla 2022-03-05 a la(s) 4 51 10 p  m" src="https://user-images.githubusercontent.com/88452146/156901044-2c09f2b1-f5d2-492b-a0fb-4b3eedb35560.png">
+
+
+## list_container 
+
+Contenedor de lista (Se encuentra en el proyecto de Components).
+
+
+| Atributo            | Tipo             | Opcional | |
+|---------------------|------------------|----------|-|
+| title               | {Rich}           | True    |Texto que aparece al lado del radio button.|
+| modifier            | String Enum    | True     | separator \| all_separator |
+| footer_action       | MLBFFloxComponentLabelFooter    | True     |Footer al final de la lista|
+
+
+Visualizacion:
+
+<img width="352" alt="Captura de Pantalla 2022-03-05 a la(s) 4 31 14 p  m" src="https://user-images.githubusercontent.com/88452146/156900468-2cb278e2-8605-4de3-9893-16921305309b.png">
+
+
+
+## switch 
+
+Contiene un switch (Se encuentra en el proyecto de Components)
+
+
+| Atributo            | Tipo             | Opcional | |
+|---------------------|------------------|----------|-|
+| checked               | Bool           | True    |Texto que aparece al lado del radio button.|
+| event                 | {event}    | False     | separator \| all_separator |
+
+Modelo:
+```json
+{
+    "ui_type": "switch",
+    "data": {
+        "checked": false,
+        "event": {
+            "type": "cho_sdk_one_tap_payment_am_with_om",
+            "data":{
+                "combine_with_am": true
+            }
+        }
+    }
+}
+```
+
+
+Visualizacion:
+
+<img width="100" alt="Captura de Pantalla 2022-03-05 a la(s) 4 39 22 p  m" src="https://user-images.githubusercontent.com/88452146/156900646-c94206b2-acbc-4550-9428-84e2945df7a7.png">
+
+
+## image_label 
+muestra una imagen con un label al frente (Se encuentra en el proyecto de Components)
+
+
+| Atributo            | Tipo             | Opcional | |
+|---------------------|------------------|----------|-|
+| asset              | MLBFFloxComponentImageModel   | True     | icono de tipo MLBFFloxComponentImageModel|
+| text              | {Rich}   | True     | Texto del label|
+| modifier              | String Enum   | True     | extended\| reduced\| around\| no_padding\| |
+
+Modelo:
+```json
+{
+  "id": "image_label",
+  "ui_type": "image_label",
+  "data": {
+    "asset": {
+      "accessibility": "mo_transferhub_clock",
+      "data": {
+        "local": "clock"
+      },
+      "type": "icon"
+    },
+    "text": {
+      "rich": []
+    }
+  }
+}
+```
+Visualizacion:
+
+<img width="348" alt="Captura de Pantalla 2022-03-05 a la(s) 5 45 51 p  m" src="https://user-images.githubusercontent.com/88452146/156902334-ae7fbff6-d4cd-4da8-8b26-a598455ff7ee.png">
 
 
 ## link_container 
