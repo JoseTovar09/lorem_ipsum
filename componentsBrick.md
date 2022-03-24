@@ -2,35 +2,28 @@
 
 En esta seccion mostramos la lista y el detalle de los bricks "ui_type" del proyecto Components en iOS 🍎.
 
-## button_container
+- [button](#button)
+- [card](#card)
+- [button_container](#button_container)
+- [image_label](#image_label)
+- [test_app_label](#test_app_label)
+- [bar_code](#bar_code)
+- [card_information](#card_information)
+- [link](#link)
+- [detail_row_with_images](#detail_row_with_images)
+- [form](#form)
+- [input_text](#input_text)
+- [submit_button](#submit_button)
+- [checkbox](#checkbox)
+- [input_spinner](#input_spinner)
+- [bulleted_list](#bulleted_list)
+- [text_code](#text_code)
+- [input_card_radio_button](#input_card_radio_button)
+- [input_card_radio_button_group](#input_card_radio_button_group)
+- [redirect_separator](#redirect_separator)
+- [switch](#switch)
+- [card_medium_container](#card_medium_container)
 
-Es un brick especial para contener los [button](#button) puede contener N botones. (Se encuentra en el proyecto de Components). 
-Contiene los botones con un margen en especial. 
-
-Modelo:
-
-```json
-{
-    "ui_type": "button_container",
-    "data" : {
-        "text" : "Botones"
-    },
-    "bricks": [
-      {
-        "id": "button1",
-        "ui_type": "button",
-        "data": {
-          "text": "Loud",
-          "style": "loud",
-          "event": {
-            "type": "alert"
-          },
-          "accessibility": "loud button style"
-        }
-      }    
-    ]
-}
-```
 
 ## button
 
@@ -75,6 +68,60 @@ Visualización:
 
 
 
+## card 
+Muestra una card, que contiene un stackView de elementos. (Se encuentra en el proyecto del SDK)
+
+- contiene bricks.
+
+| Atributo            | Tipo             | Opcional | |
+|---------------------|------------------|----------|-|
+| style          | String           | True     ||
+| tracking           |[AnyHashable: Any]   | True     ||
+
+Model:
+
+```json
+{
+  "ui_type": "card",
+  "bricks": []
+}
+```
+
+Visualizacion:
+
+<img width="376" alt="Captura de Pantalla 2022-03-24 a la(s) 9 07 23 a  m" src="https://user-images.githubusercontent.com/88452146/159934274-41c08ef0-3c3d-417d-96ac-7b09b7b89809.png">
+
+
+
+## button_container
+
+Es un brick especial para contener los [button](#button) puede contener N botones. (Se encuentra en el proyecto de Components). 
+Contiene los botones con un margen en especial. 
+
+Modelo:
+
+```json
+{
+    "ui_type": "button_container",
+    "data" : {
+        "text" : "Botones"
+    },
+    "bricks": [
+      {
+        "id": "button1",
+        "ui_type": "button",
+        "data": {
+          "text": "Loud",
+          "style": "loud",
+          "event": {
+            "type": "alert"
+          },
+          "accessibility": "loud button style"
+        }
+      }    
+    ]
+}
+```
 
 ## test_app_label 
 Muestra un texto con fondo gris 
@@ -96,6 +143,101 @@ Model:
 Visualizacion:
 
 <img width="378" alt="Captura de Pantalla 2022-03-24 a la(s) 3 58 44 p  m" src="https://user-images.githubusercontent.com/88452146/160009189-fb705688-1d54-4d0c-9104-8c830d26a324.png">
+
+## bar_code 
+Muestra una lista de cuotas, con su precio y detalle. (Se encuentra en el proyecto del SDK)
+
+
+| Atributo            | Tipo             | Opcional | |
+|---------------------|------------------|----------|-|
+| primary_title          | MLBFFloxComponentLabel           | True     ||
+| description           |MLBFFloxComponentLabel   | False     ||
+| barcode           |MLBFFloxComponentBase64Image   | False     ||
+| modifier           |String   | True     ||
+
+Model:
+
+```json
+{
+    "id": "bar_code",
+    "ui_type": "bar_code",
+    "data": {
+        "barcode": {
+            "src": "iVBORw0KGgoAAAANSUhEUgAAAlgAAAAKAQAAAABAxB2kAAAAW0lEQVR42mP4//+f5IMKiYT0B5KNjW31bRWVDxLb29vnz5OoqEh8+Hye/Pz2Z3JyEnUJCQmS7e1tchIgte3P2+Tk0tt/zm9/2Cbf+BOIZ9T//88wataoWUPELACXinaYKHeyAAAAAABJRU5ErkJggg==",
+            "format": "png"
+        },
+        "description": {
+            "rich": [
+                {
+                    "type": "text",
+                    "value": {
+                        "text": "23793.38029 50600.201235 07006.333301 4 87320001000000"
+                    }
+                }
+            ]
+        },
+        "modifier": "transparent"
+    }
+}
+```
+
+Visualizacion:
+
+<img width="344" alt="Captura de Pantalla 2022-03-24 a la(s) 9 40 10 a  m" src="https://user-images.githubusercontent.com/88452146/159941091-d4f61deb-bb64-4589-a4f8-3136acc2d97d.png">
+
+## card_information 
+Muestra en la informacion del envio del producto. (Se encuentra en el proyecto del SDK)
+
+
+| Atributo            | Tipo             | Opcional | |
+|---------------------|------------------|----------|-|
+| title          | MLBFFloxComponentLabel           | False     ||
+| description           |MLBFFloxComponentLabel   | True     ||
+| epigraph           |[[AnyHashable: Any]]   | True     ||
+| disclaimer           |MLBFFloxComponentLabel   | True     ||
+| keyword           |MLBFFloxComponentLabel   | True     ||
+| asset           |MLBFFloxComponentImageModel   | False     ||
+| modifier           |String   | True     ||
+
+Model:
+
+```json
+{
+    "ui_type": "card_information",
+    "data": {
+        "title": {
+            "rich": [
+                {
+                    "type": "text",
+                    "value": {
+                        "text": "Envio para rua de test 111"
+                    }
+                }
+            ]
+        },
+        "disclaimer": {
+            "rich": [
+            ]
+        },
+        "modifier": "ellipsis",
+        "description": {
+            "rich": [
+            ]
+        },
+        "asset": {
+            "type": "icon",
+            "data": {
+                "id": "buflo_congrats_information_shipping"
+            }
+        }
+    }
+}
+```
+
+Visualizacion:
+
+<img width="346" alt="Captura de Pantalla 2022-03-24 a la(s) 9 20 24 a  m" src="https://user-images.githubusercontent.com/88452146/159936856-4e115675-9b33-4be1-b2c3-6af0f586ed1d.png">
+
 
 ## input_text
 
@@ -182,6 +324,44 @@ botón para enviar datos del formulario. Tiene el mismo data que el [button](#bu
 Visualización: 
 
 <img width="351" alt="Captura de Pantalla 2022-03-05 a la(s) 3 02 33 p  m" src="https://user-images.githubusercontent.com/88452146/156898427-9481f679-6624-4b05-b94f-aca07bf499aa.png">
+
+
+## checkbox 
+Se encuentra en el proyecto de Componnets. 
+
+Model:
+
+```json
+{
+  "ui_type": "checkbox",
+  "data": {
+    "checked": true,
+    "text": "Sem número",
+    "match_behaviour": "makeFieldOptional",
+    "event": {
+      "id": "checkbox_update",
+      "type": "update_bricks",
+      "data": {
+        "bricks": [
+          {
+            "ui_type": "input_text",
+            "data": {
+              "disabled_text": "SN"
+            },
+            "id": "street_number"
+          }
+        ]
+      }
+    },
+    "optional_value": "SN"
+  }
+}
+```
+
+Visualizacion:
+
+<img width="381" alt="Captura de Pantalla 2022-03-24 a la(s) 10 36 04 a  m" src="https://user-images.githubusercontent.com/88452146/159953348-e2e673ba-e721-4f09-a168-81be1c483749.png">
+
 
 ## input_card_radio_button 
 
