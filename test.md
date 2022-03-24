@@ -2756,82 +2756,82 @@ Visualizacion:
 
 
 
-## message 
-Muestra card con un titulo, descripcion y icono. (Se encuentra en el proyecto del SDK)
+## split_payment_container 
+Es el contenedor principal de Split. Contiene un stackView dentro de un ScrollView. (Se encuentra en el proyecto del SDK)
 
 | Atributo            | Tipo             | Opcional | |
 |---------------------|------------------|----------|-|
-| title          | String           | True     ||
-| is_dismissible           |Bool   | True     ||
-| message           |CHSDKCongratsFloxLabel   | True     ||
+| event          | FloxEvent           | True     ||
 
 Model:
 
 ```json
-
+{
+    "ui_type": "split_payment_container",
+    "bricks": []
+}    
 ```
 
-Visualizacion:
 
-
-
-
-## message 
-Muestra card con un titulo, descripcion y icono. (Se encuentra en el proyecto del SDK)
+## split_payment_card_medium_container 
+Contendor que contiene un stackView y se puede alargar su espacio de constraints. Es utilizado para las cards de opciones de pago (Se encuentra en el proyecto del SDK)
 
 | Atributo            | Tipo             | Opcional | |
 |---------------------|------------------|----------|-|
-| title          | String           | True     ||
-| is_dismissible           |Bool   | True     ||
-| message           |CHSDKCongratsFloxLabel   | True     ||
+| modifier          | String           | True     ||
+
 
 Model:
 
 ```json
-
+{
+  "ui_type": "split_payment_card_medium_container",
+  "id": "split_payment_card_medium_container",
+  "data": {
+      "modifier": "extended"
+  },
+  "bricks": [
+  ]
+}
 ```
 
-Visualizacion:
 
-
-
-## message 
-Muestra card con un titulo, descripcion y icono. (Se encuentra en el proyecto del SDK)
+## split_payment_form_container 
+Contendor que contiene un stackView y se puede alargar su espacio de constraints. Es utilizado para contener los [form_amount](#form_amount)
+ (Se encuentra en el proyecto del SDK)
 
 | Atributo            | Tipo             | Opcional | |
 |---------------------|------------------|----------|-|
-| title          | String           | True     ||
-| is_dismissible           |Bool   | True     ||
-| message           |CHSDKCongratsFloxLabel   | True     ||
+| modifier          | String           | True     ||
 
 Model:
 
 ```json
-
+{
+  "ui_type": "split_payment_form_container",
+  "id": "split_payment_form_container",
+  "data": {
+  },
+  "bricks": [
+  ]
+}
 ```
 
-Visualizacion:
+## split_payment_list_container 
+Contiene un stackView, se utiliza para mostrar una lista. (Se encuentra en el proyecto del SDK)
 
-
-
-## message 
-Muestra card con un titulo, descripcion y icono. (Se encuentra en el proyecto del SDK)
-
-| Atributo            | Tipo             | Opcional | |
-|---------------------|------------------|----------|-|
-| title          | String           | True     ||
-| is_dismissible           |Bool   | True     ||
-| message           |CHSDKCongratsFloxLabel   | True     ||
-
+- No tiene data
+- 
 Model:
 
 ```json
-
+{
+  "ui_type": "split_payment_list_container",
+  "id": "split_payment_list_container",
+  "bricks": [
+  ]
+}
 ```
-
-Visualizacion:
-
-
 
 ## message 
 Muestra card con un titulo, descripcion y icono. (Se encuentra en el proyecto del SDK)
