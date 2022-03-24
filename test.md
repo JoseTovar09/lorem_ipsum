@@ -1,6 +1,6 @@
-# Lista de Bricks CHOSDK - Components - Split
+# Lista de Bricks en Checkout
 
-En esta seccion mostramos la lista de los bricks "ui_type" que soportamos en los poryectos CHOSDK, Components y Split en iOS 🍎.
+En esta seccion mostramos la lista y el detalle de los bricks "ui_type" que soportamos en los poryectos CHOSDK, Components, OneTap y Split en iOS 🍎.
 
 # Modulo Common - SDK
 
