@@ -2,6 +2,8 @@
 
 En esta seccion mostramos la lista de los bricks "ui_type" que soportamos en los poryectos CHOSDK, Components y Split en iOS 🍎.
 
+# Modulo Components - SDK
+
 - [title_with_action](#title_with_action)
 - [separator](#separator)
 - [button_container](#button_container)
@@ -39,6 +41,42 @@ En esta seccion mostramos la lista de los bricks "ui_type" que soportamos en los
 - [ftu_main](#ftu_main)
 - [cho_sdk_one_tap_modal](#cho_sdk_one_tap_modal)
 - [list_row_with_price](#list_row_with_price)
+- [fullscreen_error](#fullscreen_error)
+- [generic_container](#generic_container)
+
+# Modulo Payment - SDK
+- [one_tap_payment_installments](#one_tap_payment_installments)
+- [one_tap_cards_selector](#one_tap_cards_selector)
+- [cho_payment_card_container](#cho_payment_card_container)
+- [cho_payment_card_medium](#cho_payment_card_medium)
+- [cho_sdk_payment_payment_off_card](#cho_sdk_payment_payment_off_card)
+- [cho_payment_new_card](#cho_payment_new_card)
+- [installments_list_row](#installments_list_row)
+- [payment_option_row](#payment_option_row)
+- [cho_payment_account_money_card](#cho_payment_account_money_card)
+- [cho_payment_default_card](#cho_payment_account_money_card)
+- [cho_payment_credits_card](#cho_payment_account_money_card)
+- [discount_list_row](#cho_payment_account_money_card)
+- [discount_coupon_list_row](#discount_coupon_list_row)
+- [discounts_total](#discounts_total)
+- [cho_add_coupon_submit_button](#cho_add_coupon_submit_button)
+- [cho_payment_consumer_credits_card](#cho_payment_consumer_credits_card)
+- [cho_payment_account_money_default_card](#cho_payment_account_money_default_card)
+- [cho_sdk_payment_installment_carousel_item](#cho_sdk_payment_installment_carousel_item)
+- [cho_sdk_payment_installments_carousel](#cho_sdk_payment_installments_carousel)
+
+# Modulo Review - SDK
+- [review_container](#review_container)
+- [review_summary_container](#review_summary_container)
+- [review_summary_row_title](#review_summary_row_title)
+- [review_summary_row_detail](#review_summary_row_detail)
+- [review_summary_detail_label](#review_summary_detail_label)
+- [review_detail_container](#review_detail_container)
+- [review_detail_payment](#review_detail_payment)
+- [review_detail_item](#review_detail_item)
+- [review_detail_shipping](#review_detail_shipping)
+
+
 
 
 ## title_with_action
@@ -1061,6 +1099,7 @@ Visualizacion:
 Muestra la pantalla de error con la navegacion. no tiene Data (Se encuentra en el proyecto del SDK)
 
 Visualizacion:
+
 ![Simulator Screen Shot - iPhone 12 - 2022-03-23 at 15 48 11](https://user-images.githubusercontent.com/88452146/159793401-e8a60426-d1a2-4752-8a17-3d9f74c1b4d7.png)
 
 
@@ -1097,6 +1136,7 @@ Model:
 ```
 
 Visualizacion:
+
 ![Simulator Screen Shot - iPhone 12 - 2022-03-23 at 15 48 11](https://user-images.githubusercontent.com/88452146/159793401-e8a60426-d1a2-4752-8a17-3d9f74c1b4d7.png)
 
 ## one_tap_payment_installments 
@@ -1138,6 +1178,7 @@ Model:
 ```
 
 Visualizacion:
+
 <img width="390" alt="Captura de Pantalla 2022-03-23 a la(s) 4 41 28 p  m" src="https://user-images.githubusercontent.com/88452146/159801580-af2760ff-f428-47ad-a8f5-c103c618759e.png">
 
 
@@ -1153,6 +1194,7 @@ Model:
 ```
 
 Visualizacion:
+
 <img width="394" alt="Captura de Pantalla 2022-03-23 a la(s) 4 53 40 p  m" src="https://user-images.githubusercontent.com/88452146/159802672-228fc33f-c187-4044-8c84-f4a34f5e5f51.png">
 
 
@@ -1196,6 +1238,7 @@ Model:
 ```
 
 Visualizacion:
+
 <img width="369" alt="Captura de Pantalla 2022-03-23 a la(s) 5 09 31 p  m" src="https://user-images.githubusercontent.com/88452146/159804344-1e0d0e15-4a65-405b-9465-02fd0b6b375d.png">
 
 ## cho_sdk_payment_payment_off_card 
@@ -1234,6 +1277,7 @@ Model:
 
 
 Visualizacion:
+
 <img width="375" alt="Captura de Pantalla 2022-03-23 a la(s) 5 22 51 p  m" src="https://user-images.githubusercontent.com/88452146/159805956-a0eddc58-b48d-4dfb-bc3b-d78df6a093d8.png">
 
 ## cho_payment_new_card 
@@ -1318,6 +1362,7 @@ Model:
 ```
 
 Visualizacion:
+
 <img width="382" alt="Captura de Pantalla 2022-03-23 a la(s) 5 38 39 p  m" src="https://user-images.githubusercontent.com/88452146/159807748-fdcc46ff-6e4b-464a-882e-db081c367007.png">
 
 ## payment_option_row 
@@ -1354,6 +1399,7 @@ Model:
 }
 ```
 Visualizacion:
+
 <img width="378" alt="Captura de Pantalla 2022-03-23 a la(s) 5 49 00 p  m" src="https://user-images.githubusercontent.com/88452146/159808945-ae3978f1-b739-4da0-af6c-d56a875a3126.png">
 
 
@@ -1388,6 +1434,7 @@ Model:
 ```
 
 Visualizacion:
+
 <img width="362" alt="Captura de Pantalla 2022-03-23 a la(s) 5 53 25 p  m" src="https://user-images.githubusercontent.com/88452146/159809371-0534b9c4-964e-40e0-8115-8d93eb868652.png">
 
 
@@ -1424,6 +1471,7 @@ Model:
 ```
 
 Visualizacion:
+
 <img width="364" alt="Captura de Pantalla 2022-03-23 a la(s) 5 58 53 p  m" src="https://user-images.githubusercontent.com/88452146/159810074-93d14ef7-9f68-41c2-a809-122b73ad02ad.png">
 
 
@@ -1455,6 +1503,7 @@ Model:
 ```
 
 Visualizacion:
+
 <img width="375" alt="Captura de Pantalla 2022-03-23 a la(s) 6 03 33 p  m" src="https://user-images.githubusercontent.com/88452146/159810582-0cf748c6-2106-469d-a7e7-1121033abe1b.png">
 
 
@@ -1493,6 +1542,7 @@ Model:
 ```
 
 Visualizacion:
+
 <img width="374" alt="Captura de Pantalla 2022-03-23 a la(s) 6 33 45 p  m" src="https://user-images.githubusercontent.com/88452146/159813417-cad80dfa-98d9-44d5-96e5-fa9897aeb167.png">
 
 
@@ -1538,6 +1588,7 @@ Model:
 ```
 
 Visualizacion:
+
 <img width="390" alt="Captura de Pantalla 2022-03-23 a la(s) 6 40 07 p  m" src="https://user-images.githubusercontent.com/88452146/159814020-bb8973a4-d655-401f-a790-d35efe0ef2d7.png">
 
 
@@ -1569,6 +1620,7 @@ Model:
 ```
 
 Visualizacion:
+
 <img width="375" alt="Captura de Pantalla 2022-03-23 a la(s) 6 44 24 p  m" src="https://user-images.githubusercontent.com/88452146/159814427-71f1d8e7-2442-410d-acb4-cea3e8e315aa.png">
 
 
