@@ -2,6 +2,19 @@
 
 En esta seccion mostramos la lista y el detalle de los bricks "ui_type" del modulo Shipping, BillingInfo, OneTap y Split del proyecto CHOSDK en iOS 🍎.
 
+- [cho_shipping_option_selected_address_card](#cho_shipping_option_selected_address_card)
+- [shipping_options_list_stack](#shipping_options_list_stack)
+- [shipping_options_list_row](#shipping_options_list_row)
+- [one_tap_billing_info](#one_tap_billing_info)
+- [section_title](#section_title)
+- [checkbox](#checkbox)
+- [link](#link)
+- [input_spinner](#input_spinner)
+- [skeleton_loading](#skeleton_loading)
+- [split_payment_container](#split_payment_container)
+- [split_payment_card_medium_container](#split_payment_card_medium_container)
+- [split_payment_form_container](#split_payment_form_container)
+- [split_payment_list_container](#split_payment_list_container)
 
 
 ## cho_shipping_option_selected_address_card 
@@ -208,40 +221,13 @@ Visualizacion:
 
 
 ## checkbox 
-Se encuentra en el proyecto de Componnets. 
+Se encuentra en el proyecto de [Componets](componentsBrick.md). 
 
-Model:
+## link 
+Se encuentra en el proyecto de [Componets](componentsBrick.md). 
 
-```json
-{
-  "ui_type": "checkbox",
-  "data": {
-    "checked": true,
-    "text": "Sem número",
-    "match_behaviour": "makeFieldOptional",
-    "event": {
-      "id": "checkbox_update",
-      "type": "update_bricks",
-      "data": {
-        "bricks": [
-          {
-            "ui_type": "input_text",
-            "data": {
-              "disabled_text": "SN"
-            },
-            "id": "street_number"
-          }
-        ]
-      }
-    },
-    "optional_value": "SN"
-  }
-}
-```
-
-Visualizacion:
-
-<img width="381" alt="Captura de Pantalla 2022-03-24 a la(s) 10 36 04 a  m" src="https://user-images.githubusercontent.com/88452146/159953348-e2e673ba-e721-4f09-a168-81be1c483749.png">
+## input_spinner 
+Se encuentra en el proyecto de [Componets](componentsBrick.md). 
 
 
 ## skeleton_loading 
