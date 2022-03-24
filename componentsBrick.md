@@ -9,6 +9,7 @@ En esta seccion mostramos la lista y el detalle de los bricks "ui_type" del proy
 - [test_app_label](#test_app_label)
 - [bar_code](#bar_code)
 - [card_information](#card_information)
+- [link_container](#link_container)
 - [link](#link)
 - [detail_row_with_images](#detail_row_with_images)
 - [form](#form)
@@ -22,6 +23,7 @@ En esta seccion mostramos la lista y el detalle de los bricks "ui_type" del proy
 - [input_card_radio_button_group](#input_card_radio_button_group)
 - [redirect_separator](#redirect_separator)
 - [switch](#switch)
+- [list_container](#list_container)
 - [card_medium_container](#card_medium_container)
 
 
