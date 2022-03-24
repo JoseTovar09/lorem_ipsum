@@ -1100,7 +1100,7 @@ Muestra la pantalla de error con la navegacion. no tiene Data (Se encuentra en e
 
 Visualizacion:
 
-![Simulator Screen Shot - iPhone 12 - 2022-03-23 at 15 48 11](https://user-images.githubusercontent.com/88452146/159793401-e8a60426-d1a2-4752-8a17-3d9f74c1b4d7.png)
+<img width="387" alt="Captura de Pantalla 2022-03-23 a la(s) 8 05 23 p  m" src="https://user-images.githubusercontent.com/88452146/159821617-d994839f-1a07-4762-8f6c-54d659c37562.png">
 
 
 ## generic_container 
@@ -1134,10 +1134,6 @@ Model:
   }
 }
 ```
-
-Visualizacion:
-
-![Simulator Screen Shot - iPhone 12 - 2022-03-23 at 15 48 11](https://user-images.githubusercontent.com/88452146/159793401-e8a60426-d1a2-4752-8a17-3d9f74c1b4d7.png)
 
 ## one_tap_payment_installments 
 Contiene un view con stackView, donde tiene label titulo, amount, informacion. (Se encuentra en el proyecto del SDK)
