@@ -2,6 +2,24 @@
 
 En esta seccion mostramos la lista y el detalle de los bricks "ui_type" del modulo Congrats del proyecto CHOSDK en iOS 🍎.
 
+- [main](#main)
+- [body_congrats](#body_congrats)
+- [card](#card)
+- [card_information](#card_information)
+- [banner_congrats](#banner_congrats)
+- [body_congrats_title](#body_congrats_title)
+- [body_congrats_description](#body_congrats_description)
+- [information_list_footer](#information_list_footer)
+- [bar_code](#bar_code)
+- [progress_loyalty](#progress_loyalty)
+- [discount_loyalty](#discount_loyalty)
+- [text_code](#text_code)
+- [card_disclaimer](#card_disclaimer)
+- [bulleted_list](#bulleted_list)
+- [button](#button)
+- [button_container](#button_container)
+- [payment_option_row](#payment_option_row)
+- [message](#message)
 
 
 ## main 
@@ -388,8 +406,23 @@ Muestra una lista de cuotas, con su precio y detalle. (Se encuentra en el proyec
 | discounts_items           |[[AnyHashable: Any]]   | True     ||
 
 
+## text_code 
+Se encuentra en el proyecto de [Componets](componentsBrick.md). 
+
+## card_disclaimer 
+Se encuentra en el proyecto de [Componets](componentsBrick.md). 
+
+## bulleted_list 
+Se encuentra en el proyecto de [Componets](componentsBrick.md). 
+
+## button 
+Se encuentra en el proyecto de [Componets](componentsBrick.md). 
+
+## button_container 
+Se encuentra en el proyecto de [Componets](componentsBrick.md). 
+
 ## payment_option_row 
-Tiene lo mismo que [payment_option_row](#payment_option_row) (Se encuentra en el proyecto del SDK)
+Se encuentra en el Modulo de [Payments](Payments.md). 
 
 
 ## message 
