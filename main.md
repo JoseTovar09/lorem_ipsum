@@ -8,8 +8,8 @@ En esta seccion mostramos la lista y el detalle de los bricks "ui_type" que sopo
 
 ####  [Lista Components](componentsBrick.md)
 
-- [button](#button)
-- [card](#card)
+- button
+- card
 - [button_container](#button_container)
 - [image_label](#image_label)
 - [test_app_label](#test_app_label)
