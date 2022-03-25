@@ -3,8 +3,6 @@
 En esta seccion mostramos la lista y el detalle de los bricks "ui_type" del modulo Common del proyecto CHOSDK en iOS 🍎.
 
 
-# Modulo Common - SDK
-
 - [title_with_action](#title_with_action)
 - [separator](#separator)
 - [button_container](#button_container)
