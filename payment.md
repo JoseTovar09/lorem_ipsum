@@ -2,7 +2,6 @@
 
 En esta seccion mostramos la lista y el detalle de los bricks "ui_type" del modulo Payment del proyecto **CHOSDK** en iOS 🍎.
 
-# Modulo Payment - SDK
 - [one_tap_payment_installments](#one_tap_payment_installments)
 - [one_tap_cards_selector](#one_tap_cards_selector)
 - [cho_payment_card_container](#cho_payment_card_container)
