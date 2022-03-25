@@ -10,33 +10,33 @@ En esta seccion mostramos la lista y el detalle de los bricks "ui_type" que sopo
 
 - button
 - card
-- [button_container](#button_container)
-- [image_label](#image_label)
-- [test_app_label](#test_app_label)
-- [bar_code](#bar_code)
-- [card_information](#card_information)
-- [link_container](#link_container)
-- [link](#link)
-- [detail_row_with_images](#detail_row_with_images)
-- [form](#form)
-- [input_text](#input_text)
-- [submit_button](#submit_button)
-- [checkbox](#checkbox)
-- [input_spinner](#input_spinner)
-- [bulleted_list](#bulleted_list)
-- [text_code](#text_code)
-- [input_card_radio_button](#input_card_radio_button)
-- [input_card_radio_button_group](#input_card_radio_button_group)
-- [redirect_separator](#redirect_separator)
-- [switch](#switch)
-- [list_container](#list_container)
-- [card_medium_container](#card_medium_container)
+- button_container
+- image_label
+- test_app_label 
+- bar_code 
+- card_information 
+- link_container 
+- link 
+- detail_row_with_images 
+- form 
+- input_text 
+- submit_button 
+- checkbox 
+- input_spinner 
+- bulleted_list 
+- text_code 
+- input_card_radio_button 
+- input_card_radio_button_group 
+- redirect_separator
+- switch 
+- list_container 
+- card_medium_container 
 
 ## CHOSDK 
 
 ### Modulo Common [Ver Detalle](BricksCommon.md)
 
-- [title_with_action](#title_with_action)
+- [title_with_action]()
 - [separator](#separator)
 - [button_container](#button_container)
 - [button](#button)
