@@ -221,13 +221,13 @@ Visualizacion:
 
 
 ## checkbox 
-Se encuentra en el proyecto de [Componets](componentsBrick.md). 
+Se encuentra en el proyecto de [Componets](ComponentsBricks.md). 
 
 ## link 
-Se encuentra en el proyecto de [Componets](componentsBrick.md). 
+Se encuentra en el proyecto de [Componets](ComponentsBricks.md). 
 
 ## input_spinner 
-Se encuentra en el proyecto de [Componets](componentsBrick.md). 
+Se encuentra en el proyecto de [Componets](ComponentsBricks.md). 
 
 
 ## skeleton_loading 
