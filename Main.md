@@ -6,19 +6,19 @@ En esta seccion mostramos la lista y el detalle de los bricks "ui_type" que sopo
 
 ## Components
 
-####  [Ver Detalle - Components](componentsBrick.md)
+####  [Ver Detalle - Components](ComponentsBricks.md)
 
 ## CHOSDK 
 
-#### Modulo Common [Ver Detalle](BricksCommon.md)
+#### Modulo Common [Ver Detalle](CommonBricks.md)
 
-#### Modulo Payment [Ver Detalle](payment.md)
+#### Modulo Payment [Ver Detalle](PaymentBricks.md)
 
-#### Modulo Congrats [Ver Detalle](Congrats.md)
+#### Modulo Congrats [Ver Detalle](CongratsBricks.md)
 
-#### Modulo Review [Ver Detalle](Review.md)
+#### Modulo Review [Ver Detalle](ReviewBricks.md)
 
-#### Modulo Shipping, BillingInfo, OneTap y Split [Ver Detalle](CHOSDK.MD)
+#### Modulo Shipping, BillingInfo, OneTap y Split [Ver Detalle](ChoSDKBricks.MD)
 
 
 
