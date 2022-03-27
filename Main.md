@@ -18,7 +18,7 @@ En esta seccion mostramos la lista y el detalle de los bricks "ui_type" que sopo
 
 #### Modulo Review [Ver Detalle](ReviewBricks.md)
 
-#### Modulo Shipping, BillingInfo, OneTap y Split [Ver Detalle](ChoSDKBricks.MD)
+#### Modulo Shipping, BillingInfo, OneTap y Split [Ver Detalle](ChoSDKBricks.md)
 
 
 
@@ -27,7 +27,7 @@ En esta seccion mostramos la lista y el detalle de los bricks "ui_type" que sopo
 
 # Toda Lista
 
-### Components [Lista Components](componentsBrick.md)
+### Components [Lista Components](ComponentsBricks.md)
 
 - button
 - card
@@ -55,7 +55,7 @@ En esta seccion mostramos la lista y el detalle de los bricks "ui_type" que sopo
 
 ## CHOSDK 
 
-### Modulo Common [Ver Detalle](BricksCommon.md)
+### Modulo Common [Ver Detalle](CommonBricks.md)
 
 - title_with_action
 - separator
@@ -98,7 +98,7 @@ En esta seccion mostramos la lista y el detalle de los bricks "ui_type" que sopo
 - fullscreen_error
 - generic_container
 
-### Modulo Payment [Ver Detalle](payment.md)
+### Modulo Payment [Ver Detalle](PaymentBricks.md)
 
 - one_tap_payment_installments
 - one_tap_cards_selector
@@ -122,7 +122,7 @@ En esta seccion mostramos la lista y el detalle de los bricks "ui_type" que sopo
 
 
 
-### Modulo Congrats [Ver Detalle](Congrats.md)
+### Modulo Congrats [Ver Detalle](CongratsBricks.md)
 
 - main
 - body_congrats
@@ -143,7 +143,7 @@ En esta seccion mostramos la lista y el detalle de los bricks "ui_type" que sopo
 - payment_option_row
 - message
 
-### Modulo Review [Ver Detalle](Review.md)
+### Modulo Review [Ver Detalle](ReviewBricks.md)
 
 - review_container
 - review_summary_container
@@ -156,7 +156,7 @@ En esta seccion mostramos la lista y el detalle de los bricks "ui_type" que sopo
 - review_detail_shipping
 
 
-### Modulo Shipping, BillingInfo, OneTap y Split [Ver Detalle](CHOSDK.MD)
+### Modulo Shipping, BillingInfo, OneTap y Split [Ver Detalle](ChoSDKBricks.md)
 
 - cho_shipping_option_selected_address_card
 - shipping_options_list_stack
