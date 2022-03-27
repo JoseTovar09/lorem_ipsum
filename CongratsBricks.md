@@ -407,22 +407,22 @@ Muestra una lista de cuotas, con su precio y detalle. (Se encuentra en el proyec
 
 
 ## text_code 
-Se encuentra en el proyecto de [Componets](componentsBrick.md). 
+Se encuentra en el proyecto de [Componets](ComponentsBricks.md). 
 
 ## card_disclaimer 
-Se encuentra en el proyecto de [Componets](componentsBrick.md). 
+Se encuentra en el proyecto de [Componets](ComponentsBricks.md). 
 
 ## bulleted_list 
-Se encuentra en el proyecto de [Componets](componentsBrick.md). 
+Se encuentra en el proyecto de [Componets](ComponentsBricks.md). 
 
 ## button 
-Se encuentra en el proyecto de [Componets](componentsBrick.md). 
+Se encuentra en el proyecto de [Componets](ComponentsBricks.md). 
 
 ## button_container 
-Se encuentra en el proyecto de [Componets](componentsBrick.md). 
+Se encuentra en el proyecto de [Componets](ComponentsBricks.md). 
 
 ## payment_option_row 
-Se encuentra en el Modulo de [Payments](Payments.md). 
+Se encuentra en el Modulo de [Payments](PaymentsBricks.md). 
 
 
 ## message 
