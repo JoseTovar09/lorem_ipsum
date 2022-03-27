@@ -478,7 +478,7 @@ Visualizacion:
 ## cho_add_coupon_submit_button 
 Muestra  un boton para aplicar el cupon ingresado.  (Se encuentra en el proyecto del SDK)
 
-Tiene la misma data que [cho_purchase_button](#cho_purchase_button)
+Tiene la misma data que [cho_purchase_button](CommonBricks.md)
 
 Model:
 
