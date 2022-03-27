@@ -422,7 +422,7 @@ Se encuentra en el proyecto de [Componets](ComponentsBricks.md).
 Se encuentra en el proyecto de [Componets](ComponentsBricks.md). 
 
 ## payment_option_row 
-Se encuentra en el Modulo de [Payments](PaymentsBricks.md). 
+Se encuentra en el Modulo de [Payments](PaymentBricks.md). 
 
 
 ## message 
