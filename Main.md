@@ -1,6 +1,6 @@
 # Lista de Bricks en Checkout
 
-En esta seccion mostramos la lista y el detalle de los bricks "ui_type" que soportamos en los poryectos **CHOSDK** , **Components**, **OneTap** y **Split** en iOS 🍎 y Android.
+En esta seccion mostramos la lista y el detalle de los bricks "ui_type" que soportamos en los poryectos **CHOSDK** , **Components**, **OneTap** y **Split** en iOS 🍎 y Android 🤖.
 
 * Nota: como en el proyecto **CHOSDK** tenemos varios modulos (payment, review, congrats, etc..), Se separo en los modulos correspondientes..
 
